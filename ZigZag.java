@@ -2,9 +2,8 @@ package trees;
 
 import java.util.Stack;
 
-// time complexity - O(N)  because level order traversal
-// space complexity - O(2N)-> O(N)  using two stacks to maintain all the nodes
-
+// time complexity - O(N)  
+// space complexity -  O(N)  
 class TreeNode {
 	int data;
 	TreeNode left;
