@@ -17,7 +17,7 @@ class TreeNode {
 }
 
 public class ZigZag {
-
+//this will be a level order traversal 
 	public static void printZig(TreeNode root) {
 		if (root == null)
 			return;
