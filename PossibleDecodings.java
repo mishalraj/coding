@@ -28,7 +28,6 @@ public class PossibleDecodings {
         }
 
         result = countDecodeHelper(s, k - 1, memory);
-
         if (k >= 2 && Integer.parseInt(String.valueOf(s.substring(size,size + 2))) <= 26) {
             result += countDecodeHelper(s, k - 2, memory);
         }
