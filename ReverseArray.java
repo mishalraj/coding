@@ -3,7 +3,7 @@ import java.util.*;
 
 public class ReverseArray
 {
-    public static void reverseArrayHelper(int arr[], int start, int end)
+    public static void reverseArrayHelp(int arr[], int start, int end)
     {
        int temp;
        if(start>end)
@@ -24,7 +24,7 @@ public class ReverseArray
             arr[i]= sc.nextInt();
         }
 
-        reverseArrayHelper(arr,0,n-1);
+        reverseArrayHelp(arr,0,n-1);
 
         for(int i=0;i<n;i++)
         {
