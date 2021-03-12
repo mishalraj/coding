@@ -14,6 +14,18 @@ public class ReverseArray
 
        reverseArrayHelper(arr,start+1, end-1);
     }
+
+    public static void reversalOfArray(int arr[], int start, int end)
+    {
+        int temp;
+        if(start>end)
+            return;
+        temp = arr[start];
+        arr[start]= arr[end];
+        arr[end]= temp;
+
+        reversalOfArray(arr,start+1, end-1);
+    }
     public static void main(String args [])
     {
         Scanner sc = new Scanner(System.in);
