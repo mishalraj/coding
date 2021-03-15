@@ -1,5 +1,3 @@
-package check;
-
 import java.util.*;
 
 class ZombieInfection {
