@@ -1,3 +1,4 @@
+//Time complexity : O(n) space complexity : O(1);
 public class MinimumNumberOfJumps {
     public static void main(String args[])
     {
