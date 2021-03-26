@@ -1,4 +1,3 @@
-package gfg_Amazon;
 
 public class BurningTree {
 	

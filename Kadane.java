@@ -10,6 +10,7 @@ public class Kadane {
 
 	private static int kadaneUtil(int[] arr, int n) {
 		// TODO Auto-generated method stub
+		
 		int res=arr[0];
 		int currentSum=arr[0];
 	
