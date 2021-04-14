@@ -71,8 +71,8 @@ public class Mirrorify {
         System.out.println();
         inOrder(mirror);
         System.out.println();
-        mirrorify(tree);
-        inOrder(tree);
+        Node mirrorNew=  mirrorify(tree);
+        inOrder(mirrorNew);
     }
 
 }
