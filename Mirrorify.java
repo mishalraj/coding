@@ -1,3 +1,5 @@
+// time complexity O(n)
+
 public class Mirrorify {
     static class Node
     {
@@ -22,7 +24,7 @@ public class Mirrorify {
         newNode.left=newNode.right=null;
         return newNode;
     }
-
+//create a new tree
     static Node mirrorify(Node root)
     {
         if(root==null)
@@ -32,6 +34,28 @@ public class Mirrorify {
         newNode.left= mirrorify(root.right);
         newNode.right= mirrorify(root.left);
         return newNode;
+    }
+    // change the same tree to the mirror tree
+
+    static Node mirrorUtil(Node root)
+    {
+        if(root==null)
+        return null;
+
+        Node temp = root.left;
+        root.left= root.right;
+        root.right= temp;
+
+        if(root.left !=null)
+        {
+            mirrorUtil(root.left);
+        }
+
+        if(root.right !=null)
+        {
+            mirrorUtil(root.right);
+        }
+        return root;
     }
 
     public static void main(String str[])
@@ -46,6 +70,9 @@ public class Mirrorify {
         Node mirror = mirrorify(tree);
         System.out.println();
         inOrder(mirror);
+        System.out.println();
+        mirrorify(tree);
+        inOrder(tree);
     }
 
 }
