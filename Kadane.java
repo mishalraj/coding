@@ -3,7 +3,7 @@ public class Kadane {
 
 	public static void main(String[] args) {
 
-		int arr[]= {1,2,3,-2,5};
+		int arr[]= {-1,2,3,-2,5};
 		
 		System.out.println(kadaneUtil(arr,arr.length));
 	}
